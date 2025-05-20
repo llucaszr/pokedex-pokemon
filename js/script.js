@@ -27,7 +27,7 @@ const fetchPokemon = async (pokemon) => {
 
 //Função que irá renderizar os dados dos pokemons na tela
 const renderPokemon = async (pokemon) => {
-  pokemonName.innerHTML = "Loading ...";
+  pokemonName.innerHTML = "Carregando...";
   pokemonNumber.innerHTML = "";
 
   //Recebe os dados do pokemon
@@ -43,7 +43,7 @@ const renderPokemon = async (pokemon) => {
   } else {
     //Condição para retornar uma mensagem pro usuário e limpar a tela
     pokemonImage.style.display = "none";
-    pokemonName.innerHTML = "Not found :/";
+    pokemonName.innerHTML = "Não encontrado :/";
     pokemonNumber.innerHTML = "";
   }
 };
